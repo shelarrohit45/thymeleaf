@@ -11,7 +11,7 @@ public class Employee {
 		this.roll=roll;
 		this.salary=salary;
 	}
-private String name;//="rohit";
+private String name;//="rohit shelar";
  private int roll;
  private double salary;
 @Override
