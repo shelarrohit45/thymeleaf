@@ -14,5 +14,9 @@ public class Employee {
 private String name;//="rohit";
  private int roll;
  private double salary;
+@Override
+public String toString() {
+	return "Employee [name=" + name + ", roll=" + roll + ", salary=" + salary + "]";
+}
  
 }
