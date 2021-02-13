@@ -1,0 +1,22 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Data binding with ThymeLeaf</title>
+</head>
+<body>
+<h1> Registration Expression</h1>
+
+<form th:action="@{/empdata}" th:object="${empobject}" method="post">
+
+name :	<input th:field="*{name}"/><br><br>
+
+roll :	<input th:field="*{roll}"/><br><br>
+
+salary :	<input th:field="*{salary}"/><br><br>
+
+<button type="submit" >submit</button>
+
+</form>
+
+</body>
+</html>

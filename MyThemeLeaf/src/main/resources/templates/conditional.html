@@ -1,0 +1,17 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf Project</title>
+</head>
+<body>
+<h1>Conditional Expression</h1>
+<h2>If - Then </h2>
+<h3 th:text= "${shreyadata.salary > 20000} ? 'great'"></h3><br>
+<h3 th:text= "${shreyadata.salary > 45000} ? 'great'"></h3><br>
+<h3 th:text= "${shreyadata.salary < 45000} ? 'not great' : 'great'"></h3>
+
+<h1 th:if="${shreyadata.salary>26000}">true</h1>
+<h1 th:unless="${shreyadata.salary<40000}">false</h1>
+
+</body>
+</html>

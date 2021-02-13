@@ -1,0 +1,31 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Iterator Expretions</title>
+</head>
+<body>
+<h1>Iterator Expretion</h1>
+
+<table class="table" style="background-color: yellow">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr th:each= "emp : ${emp}">
+      <th scope="row" th:text="${empStat.index+1}">1</th>
+      <td th:text="${emp.name}">Mark</td>
+      <td th:text="${emp.roll}">Otto</td>
+      <td th:text="${emp.salary}">@mdo</td>
+    </tr>
+  </tbody>
+  
+</table>
+
+</body>
+</html>

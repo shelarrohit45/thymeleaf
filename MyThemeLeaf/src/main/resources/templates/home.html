@@ -1,0 +1,21 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf Project</title>
+</head>
+<body>
+<h1>Simple Expression</h1>
+
+<div>Name:<span th:text=${myemp.name}>xyz</span><br></div>
+<div>Roll no:<span th:text=${myemp.roll}>00</span></div>
+<br>
+<br>
+<br>
+<br>
+<h1>Selection Expression</h1>
+<div th:object=${myemp}>
+<div>Name:<span th:text=*{name}>xyz</span><br></div>
+<div>Roll no:<span th:text=*{roll}>00</span></div>
+</div>
+</body>
+</html>

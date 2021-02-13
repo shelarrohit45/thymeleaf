@@ -1,0 +1,19 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf Project</title>
+</head>
+<body>
+
+name :	<input th:field="${saveemp.name}"/><br><br>
+roll :	<input th:field="${saveemp.roll}"/><br><br>
+salary :	<input th:field="${saveemp.salary}"/><br><br>
+
+<!-- <a href="employeeresistration">registration</a>
+<a href="empdetails">details</a> -->
+
+<a href th:href="@{employeeresistration}">registration</a>
+<a href th:href="@{/}">home</a>
+
+</body>
+</html>

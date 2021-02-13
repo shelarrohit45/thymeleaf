@@ -1,0 +1,18 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf Project</title>
+</head>
+<body>
+<h1>link url Expression</h1>
+<a href="#" th:href="@{/}">home</a>
+<br>
+<h1>Path Variable</h1>
+<a href="#" th:href="@{/emp/101}">Get employee</a>
+<br>
+<h1>Dynamic Value</h1>
+<a href="#" th:href="@{/emp/{id}(id=${id})}">Get employee2</a><br>
+<h1>Query String</h1>
+<a href="#" th:href="@{/emp(id=${id})}">Get employeee</a><br>
+</body>
+</html>

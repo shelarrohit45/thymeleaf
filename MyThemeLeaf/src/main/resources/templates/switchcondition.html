@@ -1,0 +1,19 @@
+<!Doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf Project</title>
+</head>
+<body>
+<h1>Switch Conditiona Expression</h1>
+
+<div th:switch="${shreyadata.name}">
+   <p th:Case="rohit">Hello Rohit</p>
+   <p th:case="shreya">Hello shreya</p>
+   <p th:case="sagar">Hello sagar</p>
+   <p th:case="sumit">Hello sumit</p>
+   <p th:case="sunny">Hello sunny</p>
+   <p th:case="*">default case</p>
+</div>
+
+</body>
+</html>
