@@ -1,0 +1,35 @@
+<!Doctype html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<title>sighup page</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<body>
+
+
+<form action="" th:action="@{/do_register}" method="post">
+<h1 class="text-center">do Login here</h1>
+<div class="form-group form-check text-center">
+  						
+  								<input type="checkbox" 
+  								name="agreement"
+  								class="form-check-input"
+  								id="agreement"
+  								
+  								/>	
+  								
+  								
+  									 						
+  						</div>
+  						<input type="text" placeholder="enter name" name="name"/>
+  						<button type="submit" class="btn bg-primary  text-white">
+  							Submit
+  						</button>
+</form>
+
+<div th:if="${session.message}" class="text-danger">
+<p th:text="${session.message.content}">hiii</p>
+</div>
+</body>
+</html>
