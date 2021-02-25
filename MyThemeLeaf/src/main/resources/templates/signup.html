@@ -30,6 +30,7 @@
 
 <div th:if="${session.message}" class="text-danger">
 <p th:text="${session.message.content}">hiii</p>
+<th:block th:text="${session.removeAttribute('message')}"></th:block>
 </div>
 </body>
 </html>
